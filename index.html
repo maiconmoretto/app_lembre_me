@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+'<!DOCTYPE html>
 <html>
 
 <head>
@@ -92,18 +92,18 @@
 				<br>
 				<br>
 
-				<div id='hora' >
+				<div id='div-hora' >
 
 				</div>
 				
 				<br>
-				<div id='minuto'>
+				<div id='div-minuto'>
 				</div>
 
-			
+
 				<br>
 				<br>
-				<ons-input id="obs" modifier="underbar" placeholder="obs"  float></ons-input>
+				<ons-input id="obs" modifier="underbar" placeholder="obs" name="obs" float></ons-input>
 				<br>
 				<br>
 				<br>
@@ -111,24 +111,24 @@
 				<div id='minuto' class="pull-right"></div>
 				<ons-button onclick="addItem()">salvar</ons-button>
 			</div>
+		</div>
+
+	</ons-page>
+</template>
+
+
+<template id="sobre.html">
+	<ons-page>
+		<ons-toolbar>
+			<div class="left">
+				<ons-toolbar-button onclick="fn.open()">
+					<ons-icon icon="md-menu"></ons-icon>
+				</ons-toolbar-button>
 			</div>
-
-		</ons-page>
-	</template>
-
-
-	<template id="sobre.html">
-		<ons-page>
-			<ons-toolbar>
-				<div class="left">
-					<ons-toolbar-button onclick="fn.open()">
-						<ons-icon icon="md-menu"></ons-icon>
-					</ons-toolbar-button>
-				</div>
-			</ons-toolbar>
-			Sobre
-		</ons-page>
-	</template>
+		</ons-toolbar>
+		Sobre
+	</ons-page>
+</template>
 
 
 
