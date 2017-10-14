@@ -1,4 +1,5 @@
-'<!DOCTYPE html>
+'
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -50,7 +51,7 @@
 					</ons-toolbar-button>
 				</div>
 				<div class="center">
-					Lista de lembretes	
+					Lista de lembretes
 				</div>
 			</ons-toolbar>
 
@@ -58,17 +59,17 @@
 			<ons-page>
 				<template id="dialog.html">
 					<ons-dialog id="dialog-3">
-					  <div style="text-align: center; padding: 10px;">
-						<p>
-						  This dialog was created from a template.
-						  <p>
-				  
+						<div style="text-align: center; padding: 10px;">
 							<p>
-							  <ons-button onclick="hideDialog('dialog-3')">Close</ons-button>
-							</p>
-					  </div>
+								This dialog was created from a template.
+								<p>
+
+									<p>
+										<ons-button onclick="hideDialog('dialog-3')">Close</ons-button>
+									</p>
+						</div>
 					</ons-dialog>
-				  </template>
+				</template>
 
 
 				<ons-list id="lista">
@@ -136,14 +137,14 @@
 
 			<div style="text-align: center; margin-top: 30px;">
 
-				<ons-input id="descricao" modifier="underbar" placeholder="descricao"  float></ons-input>
+				<ons-input id="descricao" modifier="underbar" placeholder="descricao" float></ons-input>
 				<br>
 				<br>
 
-				<div id='div-hora' >
+				<div id='div-hora'>
 
 				</div>
-				
+
 				<br>
 				<div id='div-minuto'>
 				</div>
@@ -151,6 +152,10 @@
 
 				<br>
 				<br>
+				<ons-input id="repetir" modifier="underbar" placeholder="tomar a cada x horas" name="repetir" float></ons-input>
+				<br>
+				<br>
+
 				<ons-input id="obs" modifier="underbar" placeholder="obs" name="obs" float></ons-input>
 				<br>
 				<br>
@@ -159,24 +164,24 @@
 				<div id='minuto' class="pull-right"></div>
 				<ons-button onclick="addItem()">salvar</ons-button>
 			</div>
-		</div>
-
-	</ons-page>
-</template>
-
-
-<template id="sobre.html">
-	<ons-page>
-		<ons-toolbar>
-			<div class="left">
-				<ons-toolbar-button onclick="fn.open()">
-					<ons-icon icon="md-menu"></ons-icon>
-				</ons-toolbar-button>
 			</div>
-		</ons-toolbar>
-		Sobre
-	</ons-page>
-</template>
+
+		</ons-page>
+	</template>
+
+
+	<template id="sobre.html">
+		<ons-page>
+			<ons-toolbar>
+				<div class="left">
+					<ons-toolbar-button onclick="fn.open()">
+						<ons-icon icon="md-menu"></ons-icon>
+					</ons-toolbar-button>
+				</div>
+			</ons-toolbar>
+			Sobre
+		</ons-page>
+	</template>
 
 
 
