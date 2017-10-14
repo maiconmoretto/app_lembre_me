@@ -29,6 +29,9 @@
 					<ons-list-item onclick="fn.load('home.html')" tappable>
 						Home
 					</ons-list-item>
+					<ons-list-item onclick="fn.load('historico.html')" tappable>
+						Histórico
+					</ons-list-item>
 					<ons-list-item onclick="fn.load('sobre.html')" tappable>
 						Sobre
 					</ons-list-item>
@@ -40,6 +43,53 @@
 
 	<template id="home.html">
 		<ons-page id="home">
+			<ons-toolbar>
+				<div class="left">
+					<ons-toolbar-button onclick="fn.open()">
+						<ons-icon icon="md-menu"></ons-icon>
+					</ons-toolbar-button>
+				</div>
+				<div class="center">
+					Lista de lembretes	
+				</div>
+			</ons-toolbar>
+
+
+			<ons-page>
+				<template id="dialog.html">
+					<ons-dialog id="dialog-3">
+					  <div style="text-align: center; padding: 10px;">
+						<p>
+						  This dialog was created from a template.
+						  <p>
+				  
+							<p>
+							  <ons-button onclick="hideDialog('dialog-3')">Close</ons-button>
+							</p>
+					  </div>
+					</ons-dialog>
+				  </template>
+
+
+				<ons-list id="lista">
+
+				</ons-list>
+
+
+
+
+				<ons-fab position="bottom right" onclick="fn.load('cadastro.html')">
+					<ons-icon icon="md-plus"></ons-icon>
+				</ons-fab>
+			</ons-page>
+		</ons-page>
+
+
+	</template>
+
+
+	<template id="historico.html">
+		<ons-page id="historico">
 			<ons-toolbar>
 				<div class="left">
 					<ons-toolbar-button onclick="fn.open()">
@@ -71,8 +121,6 @@
 
 
 	</template>
-
-
 
 
 	<template id="cadastro.html">
